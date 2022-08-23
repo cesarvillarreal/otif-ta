@@ -1,0 +1,10 @@
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.table{
+    max-width: 100%;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
