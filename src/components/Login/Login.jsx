@@ -13,9 +13,15 @@ const Login = () => {
   return (
     <form>
         {error && <p className={styles.error}>{error}</p>}
-        <input type="text" value={username} onChange={ changeUser} />
-        <input type="password" value={password} onChange={changePassword} />
-        <button onClick={login}>Enviar</button>
+        <div>
+
+        <input className='input' type="text" value={username} onChange={ changeUser} />
+        </div>
+        <div>
+
+        <input className='input' type="password" value={password} onChange={changePassword} />
+        </div>
+        <button className='button' onClick={login}>Enviar</button>
     </form>
   )
 }

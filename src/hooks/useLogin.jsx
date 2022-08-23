@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import useLocalStorage from './useLocalStorage';
+import { Navigate } from 'react-router-dom';
 const useLogin = () => {
 
     const [username, setUser] = useState('');
@@ -27,7 +28,7 @@ const useLogin = () => {
             const result = await response.json();
             setError(result.results || null)
             setUserInformation(result);
-            
+            window.location = ''
         } catch (error) {
             // the BE is not returning a status code
             console.log(error);
